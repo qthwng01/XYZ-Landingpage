@@ -9,16 +9,18 @@ const Hero = () => {
           <motion.h2
           variants={fadeIn('down', 0.2)}
           initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+
           className="md:text-6xl text-[29px] md:text-[60px] font-semibold md:leading-[5.5rem] text-white-color w-full md:w-[90%] lg:w-4/5 xl:w-1/2 md:mb-4 mb-4 flex gap-10">
             Develop your skills without diligence
           </motion.h2>
           <motion.div 
            variants={fadeIn('down', 0.2)}
            initial="hidden"
-           whileInView="show"
-           viewport={{ once: false, amount: 0.5 }}
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.7 }}
+           
           className="text-[#EBEBEB] text-md md:text-2xl font-medium mb-4">
             <p className="text-[#EBEBEB]">
               A good example of a paragraph contains a topic sentence, details

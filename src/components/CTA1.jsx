@@ -9,22 +9,21 @@ const CTA1 = () => {
       <div className="container mx-auto max-w-full relative z-0 md:px-12 p-4">
         <div className="flex flex-col lg:flex-row">
           <motion.div
-            variants={fadeIn('right', 0.2)}
+            variants={fadeIn('right', 0.3)}
             initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            whileInView={'show'}
+            viewport={{ once: false }}
             className="lg:w-2/4"
           >
             <img className="lg:w-screen w-full h-auto" src={cta1} alt="cta" />
           </motion.div>
-          <div className="lg:w-2/4">
-            <motion.div
-              variants={fadeIn('left', 0.2)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
-              className="xl:pt-[4rem]"
-            >
+          <motion.div
+           variants={fadeIn('down', 0.4)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false }}
+          className="lg:w-2/4">
+            <div className="xl:pt-[4rem]">
               <h2 className="font-semibold text-[32px] lg:text-[2.5rem] xl:text-6xl text-primary-color w-full xl:w-11/12 leading-normal xl:leading-relaxed">
                 We have been improving our product
               </h2>
@@ -41,8 +40,8 @@ const CTA1 = () => {
               <button className="px-6 py-4 md:px-8 text-sm md:text-xl rounded-sm font-medium text-white-color bg-secondary-color ">
                 Get Started
               </button>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

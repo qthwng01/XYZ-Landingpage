@@ -6,20 +6,14 @@ import features from '../images/features.png'
 const Features = () => {
   return (
     <div id="features" className="pt-[12.75rem] -mt-[6.25rem] md:-mt-[2.25rem]">
-      <motion.div
-        variants={fadeIn('up', 0.3)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.5 }}
-        className="max-w-full mx-auto relative px-5 lg:px-14"
-      >
+      <div className="max-w-full mx-auto relative px-5 lg:px-14">
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           <div className="lg:w-1/4 animate-fade-right animate-once animate-duration-[2ms]">
             <motion.div
-              variants={fadeIn('right', 0.2)}
+              variants={fadeIn('right', 0.3)}
               initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
             >
               <h3 className="text-[25px] lg:text-[40px] text-primary-color font-bold md:w-full lg:w-full xl:w-[65%] mb-3">
                 Why we are better than others
@@ -61,7 +55,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 }

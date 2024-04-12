@@ -8,10 +8,10 @@ import { FaCircle } from 'react-icons/fa'
 const CardPlan = ({ isYearly }) => {
   return (
     <motion.div
-      variants={fadeIn('up', 0.2)}
+      variants={fadeIn('up', 0.3)}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      whileInView={'show'}
+      viewport={{ once: false }}
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-2 gap-8 md:gap-6 lg:gap-20 lg:mt-[5rem]"
     >
       <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-auto shadow-3xl p-4 md:p-6 lg:p-8 flex justify-center cursor-pointer">
