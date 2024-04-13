@@ -14,12 +14,12 @@ const CardPlan = ({ isYearly }) => {
       viewport={{ once: false }}
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-2 gap-8 md:gap-6 lg:gap-20 lg:mt-[5rem]"
     >
-      <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-auto shadow-3xl p-4 md:p-6 lg:p-8 flex justify-center cursor-pointer">
+      <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-auto shadow-3xl p-4 md:p-6 lg:p-8 flex justify-center cursor-pointer dark:bg-slate-800 dark:shadow-xl">
         <div className="plan__inside">
-          <h3 className="text-center text-3xl font-bold text-primary-color mb-7">
+          <h3 className="text-center text-3xl font-bold text-primary-color mb-7 dark:text-white">
             Start
           </h3>
-          <p className="text-center md:text-[14px] mb-10">
+          <p className="text-center md:text-[14px] mb-10 dark:text-slate-400">
             A common form of Lorem ipsum reads: Lorem ipsum dolor sit amet,
             consectetur adipiscing elit.
           </p>
@@ -29,7 +29,7 @@ const CardPlan = ({ isYearly }) => {
           <ul className="mb-8 flex flex-col flex-wrap">
             {planStart.map((item) => (
               <li
-                className="font-semibold py-3 inline-flex items-center"
+                className="font-semibold py-3 inline-flex items-center dark:text-white"
                 key={item.id}
               >
                 <FaCircle
@@ -48,12 +48,12 @@ const CardPlan = ({ isYearly }) => {
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-auto shadow-3xl p-4 md:p-6 lg:p-8 flex justify-center cursor-pointer">
+      <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-auto shadow-3xl p-4 md:p-6 lg:p-8 flex justify-center cursor-pointer dark:bg-slate-800 dark:shadow-xl">
         <div className="plan__inside">
-          <h3 className="text-center text-3xl font-bold text-primary-color mb-7">
+          <h3 className="text-center text-3xl font-bold text-primary-color mb-7 dark:text-white">
             Advance
           </h3>
-          <p className="text-center md:text-[14px] mb-10">
+          <p className="text-center md:text-[14px] mb-10 dark:text-slate-400">
             A common form of Lorem ipsum reads: Lorem ipsum dolor sit amet,
             consectetur adipiscing elit.
           </p>
@@ -63,7 +63,7 @@ const CardPlan = ({ isYearly }) => {
           <ul className="mb-8 flex flex-col flex-wrap">
             {planAdvance.map((item) => (
               <li
-                className="font-semibold py-3 inline-flex items-center"
+                className="font-semibold py-3 inline-flex items-center dark:text-white"
                 key={item.id}
               >
                 <FaCircle
@@ -82,12 +82,12 @@ const CardPlan = ({ isYearly }) => {
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-auto shadow-3xl p-4 md:p-6 lg:p-8 flex justify-center cursor-pointer">
+      <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-auto shadow-3xl p-4 md:p-6 lg:p-8 flex justify-center cursor-pointer dark:bg-slate-800 dark:shadow-xl">
         <div className="plan__inside">
-          <h3 className="text-center text-3xl font-bold text-primary-color mb-7">
+          <h3 className="text-center text-3xl font-bold text-primary-color mb-7 dark:text-white">
             Premium
           </h3>
-          <p className="text-center md:text-[14px] mb-10">
+          <p className="text-center md:text-[14px] mb-10 dark:text-slate-400">
             A common form of Lorem ipsum reads: Lorem ipsum dolor sit amet,
             consectetur adipiscing elit.
           </p>
@@ -101,7 +101,7 @@ const CardPlan = ({ isYearly }) => {
           <ul className="mb-8 flex flex-col flex-wrap">
             {planPremium.map((item) => (
               <li
-                className="font-semibold py-3 inline-flex items-center"
+                className="font-semibold py-3 inline-flex items-center dark:text-white"
                 key={item.id}
               >
                 <FaCircle

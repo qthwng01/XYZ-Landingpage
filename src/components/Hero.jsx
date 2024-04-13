@@ -38,10 +38,10 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.2 }}
             className="space-x-3 lg:space-x-6 md:pb-8"
           >
-            <button className="border-secondary-color bg-secondary-color rounded-sm py-3 px-6 lg:px-10 font-semibold text-xs md:text-lg lg:text-xl text-white-color hover:text-black transition-all duration-300">
+            <button className="border-secondary-color bg-secondary-color rounded-sm py-3 px-6 lg:px-10 font-semibold text-md md:text-lg lg:text-xl text-white-color hover:text-black transition-all duration-300">
               Get Started
             </button>
-            <button className="border-secondary-color bg-secondary-color rounded-sm py-3 px-6 lg:px-10 font-semibold text-xs md:text-lg lg:text-xl text-white-color hover:text-black transition-all duration-300">
+            <button className="border-secondary-color bg-secondary-color rounded-sm py-3 px-6 lg:px-10 font-semibold text-md md:text-lg lg:text-xl text-white-color hover:text-black transition-all duration-300">
               Discount
             </button>
           </motion.div>

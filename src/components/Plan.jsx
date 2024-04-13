@@ -8,11 +8,11 @@ const Plan = () => {
     <div id="pricing" className="pt-[8rem] -mt-[2.25rem] md:-mt-[1.25rem]">
       <div className="container max-w-full md:px-12 p-4">
         <div className="flex flex-col items-center">
-          <h2 className="text-center text-4xl leading-tight lg:text-5xl font-bold text-primary-color mb-2">
+          <h2 className="text-center text-4xl leading-tight lg:text-5xl font-bold text-primary-color mb-2 dark:text-secondary-color">
             Here are all our plans
           </h2>
 
-          <p className="text-center text-xs font-semibold leading-normal tracking-tight text-p-section-color mb-8 lg:w-1/4">
+          <p className="text-center text-xs font-semibold leading-normal tracking-tight text-p-section-color mb-8 lg:w-1/4 dark:text-slate-400">
             A simple paragraph is comprised of three major components. The which
             is often a declarative sentence.
           </p>
@@ -20,7 +20,7 @@ const Plan = () => {
 
         {/* Toggle */}
         <div className="flex flex-row items-center justify-center lg:mt-[4rem] mb-8 lg:mb-12">
-          <h3 className="mr-10 text-2xl font-bold text-primary-color">
+          <h3 className="mr-10 text-2xl font-bold text-primary-color dark:text-secondary-color">
             Monthly
           </h3>
           <label className="inline-flex items-center cursor-pointer">
@@ -39,7 +39,7 @@ const Plan = () => {
                dark:border-gray-600 peer-checked:bg-secondary-color"
             ></div>
           </label>
-          <h3 className="ml-10 text-2xl font-bold text-primary-color">
+          <h3 className="ml-10 text-2xl font-bold text-primary-color  dark:text-secondary-color">
             Yearly
           </h3>
         </div>

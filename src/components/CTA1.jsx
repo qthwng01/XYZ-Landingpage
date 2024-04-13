@@ -15,7 +15,7 @@ const CTA1 = () => {
             viewport={{ once: false }}
             className="lg:w-2/4"
           >
-            <img className="lg:w-screen w-full h-auto" src={cta1} alt="cta" />
+            <img className="lg:w-screen w-full h-auto dark:rounded-xl" src={cta1} alt="cta" />
           </motion.div>
           <motion.div
            variants={fadeIn('down', 0.4)}
@@ -23,17 +23,17 @@ const CTA1 = () => {
            whileInView={"show"}
            viewport={{ once: false }}
           className="lg:w-2/4">
-            <div className="xl:pt-[4rem]">
-              <h2 className="font-semibold text-[32px] lg:text-[2.5rem] xl:text-6xl text-primary-color w-full xl:w-11/12 leading-normal xl:leading-relaxed">
+            <div className="pt-[2rem] xl:pt-[4rem] xl:pl-[2rem]">
+              <h2 className="font-semibold text-[32px] lg:text-[2.5rem] xl:text-6xl text-primary-color w-full xl:w-11/12 leading-normal xl:leading-relaxed dark:text-blue-600">
                 We have been improving our product
               </h2>
               <h2 className="font-semibold text-[32px] lg:text-[2.5rem] xl:text-6xl text-secondary-color leading-normal mb-4">
                 for many years.
               </h2>
-              <p className="text-p-section-color font-medium text-sm md:text-lg">
+              <p className="text-p-section-color font-medium text-sm md:text-lg dark:text-slate-400">
                 A good example of a paragraph contains a topic conclusion.
               </p>
-              <p className="text-p-section-color font-medium text-sm md:text-lg mb-6">
+              <p className="text-p-section-color font-medium text-sm md:text-lg mb-6 dark:text-slate-400">
                 &apos;There are many different kinds of animals that live in
                 China.
               </p>

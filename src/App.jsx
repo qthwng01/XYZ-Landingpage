@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <div className='dark:bg-[#0F172A]'>
       <Navbar />
       <Hero />
       <Features />
@@ -18,7 +18,7 @@ function App() {
       <Plan />
       <Banner />
       <Footer />
-    </>
+    </div>
   )
 }
 

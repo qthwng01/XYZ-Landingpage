@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import useTheme from '../hook/useTheme'
 import { navItems } from '../constants'
 import { MdLanguage, MdMenu } from 'react-icons/md'
 import { FaXmark } from 'react-icons/fa6'
+import { CiDark, CiLight } from 'react-icons/ci'
 import logo from '../images/logo.png'
 
 const Navbar = () => {
-
+  const [isDarkMode, toggleDarkMode] = useTheme()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -46,6 +48,21 @@ const Navbar = () => {
           </div>
 
           <div className="hidden lg:flex lg:items-center">
+            {isDarkMode ? (
+              <span
+                onClick={() => toggleDarkMode(!isDarkMode)}
+                className="md:flex items-center hover:text-secondary-color mr-8 cursor-pointer"
+              >
+                <CiDark className="mr-2" /> Dark
+              </span>
+            ) : (
+              <span
+                onClick={() => toggleDarkMode(!isDarkMode)}
+                className="md:flex items-center hover:text-secondary-color mr-8 cursor-pointer"
+              >
+                <CiLight className="mr-2" /> Light
+              </span>
+            )}
             <a
               href="#"
               className="md:flex items-center hover:text-secondary-color mr-12"
@@ -58,7 +75,23 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center">
+            {isDarkMode ? (
+              <span
+                onClick={() => toggleDarkMode(!isDarkMode)}
+                className="flex flex-row items-center hover:text-secondary-color mr-6 cursor-pointer"
+              >
+                <CiDark className="mr-2" /> Dark
+              </span>
+            ) : (
+              <span
+                onClick={() => toggleDarkMode(!isDarkMode)}
+                className="flex flex-row items-center hover:text-secondary-color mr-6 cursor-pointer"
+              >
+                <CiLight className="mr-2" /> Light
+              </span>
+            )}
+
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none focus:text-gray-300"

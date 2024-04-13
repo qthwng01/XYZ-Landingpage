@@ -6,12 +6,12 @@ const PricePlan = ({ isYearly, priceYearly, priceMonthly }) => {
       {isYearly ? (
         <>
           <strong className="text-5xl text-secondary-color">{priceYearly}$</strong>
-          <span>/yearly</span>
+          <span className='dark:text-slate-400'>/yearly</span>
         </>
       ) : (
         <>
           <strong className="text-5xl text-secondary-color">{priceMonthly}$</strong>
-          <span>/month</span>
+          <span className='dark:text-slate-400'>/month</span>
         </>
       )}
     </React.Fragment>
